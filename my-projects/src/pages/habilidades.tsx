@@ -1,4 +1,4 @@
-import { Certificados, CertificadosFour, CertificadoOne, HabilidadesContainer, HabilidadesTitle } from "@/styles/pages/habilidades";
+import { Certificados, CertificadosFour, CertificadoOne, HabilidadesTitle, ContainerGlobal } from "@/styles/pages/habilidades";
 import Image from "next/image";
 
 import certificado1 from '../assets/certificados/certificado1.jpg'
@@ -48,15 +48,15 @@ import certificado42 from '../assets/certificados/certificado42.jpg'
 
 export default function Habilidades() {
   return (
-    <HabilidadesContainer>
+    <ContainerGlobal>
       <HabilidadesTitle>
         <h1>MINHAS HABILIDADES</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam asperiores ullam ea accusantium praesentium cupiditate inventore dolore sequi! Obcaecati ipsam esse sunt commodi soluta cum nobis possimus suscipit placeat porro?</p>
+        <p>Minhas habilidades e competências pessosais vão além de cursos e certificados. A minha primeira habilidade que adquiri e a mais importante é a educação. As outras habilidades que desenvolvi, foram: persistência, criatividade, liderança, flexibilidade, organização e coragem. Essas foram as habilidades e competências que aprimorei durante a minha jornada de vida e foram as ferramentas que forjaram meu caráter. </p>
       </HabilidadesTitle>
 
       <Certificados>
         <h1>MEUS CERTIFICADOS</h1>
-        <p>Esses são os certificados que adquiri durante essa minha jornada em busca de conhecimento.</p>
+        <p>Esses são os certificados que adquiri durante essa minha jornada em busca de conhecimento na área da ciência da computação.</p>
         <CertificadosFour>
           <CertificadoOne>
             <Image src={certificado1} layout="responsive" alt="israel"/>
@@ -213,6 +213,6 @@ export default function Habilidades() {
         </CertificadosFour>
         <CertificadosFour></CertificadosFour>
       </Certificados>
-    </HabilidadesContainer>
+    </ContainerGlobal>
   )
 }

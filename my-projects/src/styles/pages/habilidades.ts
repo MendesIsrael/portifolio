@@ -1,6 +1,6 @@
 import { styled } from "@stitches/react";
 
-export const HabilidadesContainer = styled('main',{
+export const ContainerGlobal = styled('main',{
   backgroundColor       : '$black',
   textAlign             : 'center',
 
