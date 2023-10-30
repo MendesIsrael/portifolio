@@ -19,9 +19,15 @@ export const {
     colors: {
       white       : '#fff',
       black       : '#000',
+      black100    : '#090909',
+      gray100     : '#575757',
+      gray150     : '#808080',
       transparent : 'rgba(0, 0, 0, 0.452)',
-      blue100     : '#11DFFA',
-      blue200     : '#36B6C7',
+      green100    : '#A9DB2A',
+      green150    : '#8DB823',
+      green200    : '#6E8F1B',
+      green250    : '#6E8F1B',
+      green300    : '#2F3D0C',
     }
   }
 })

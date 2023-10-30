@@ -1,51 +1,64 @@
 import { styled } from "@stitches/react";
 
 export const HomeContainer = styled('main',{
+  display               : 'flex',
   backgroundColor       : 'Black',
-  height                : '40rem',
+  justifyContent        : 'center',
 
-  h1: {
-    color               : '$with',
-  }
+});
+
+export const TitleTxt = styled('div', {
+color                   : '$green100',
+textAlign               : 'center',
+fontSize                : '2rem',
+  
+});
+
+export const ContainerGray = styled('div', {
+  display               : 'flex',
+
 });
 /*--------------------------------------------------------------------- */
 
 export const Title = styled('div', {
   display               : 'flex',
-  height                : '40rem',
-  width                 : '100%',
-  backgroundColor       : 'gray',
+  height                : '35rem',
+  justifyContent        : 'center',
+  alignItems            : 'center',
+  backgroundColor       : '$black',
 
   Image: {
-    height: '2rem'
+    height              : '2rem'
   }
 });
 
-export const ImgPerfil = styled('div', {
-  position              : 'absolute',
-  height                : '15rem',
-  width                 : '15rem',
-  margin                : '18rem auto auto 2rem',
-  backgroundColor       : 'Purple',
-  borderRadius          : '8px',
-  boxShadow             : '2px 0px 10px white',
-  outline               : '4px solid $blue100',
-});
+
 /*--------------------------------------------------------------------- */
 
 export const Resumo = styled('div', {
-  margin                : '5rem',
+  width                 : '60rem',
+  backgroundColor       : '$black100',
+  borderRadius          : '8px',
+  boxShadow             : '0px 0px 3px gray'
+
+});
+
+export const ImgPerfil = styled('div', {
+  
+  width                 : '30rem',
+  marginTop             : '3rem',
+  justifyContent        : 'center',
+
+});
+
+
+export const TxtResumo = styled('div', {
+  width                 : '55rem',
   textAlign             : 'center',
+  margin                : '5rem',
   
 
-  h1: {
-    fontSize            : '2.5rem',
-    color               : 'white',
-    margin              : '1.5rem',
-    
-  },
-
   p: {
-    color               : 'white',
+    color               : '$white',
   },
-})
+});

@@ -1,24 +1,31 @@
-import { HomeContainer, ImgPerfil, Resumo, Title } from "@/styles/pages/home"
+import { ContainerGray, HomeContainer, ImgPerfil, Resumo, Title, TitleTxt, TxtResumo } from "@/styles/pages/home"
 import Image from "next/image"
 
 
-import myPhoto from '../assets/perfil-1.png'
-import mergulho from '../assets/capa-2.png'
+import myPhoto from '../assets/israel-3x4.png'
 
 export default function Home() {
   return (
     <>
+      <Title>
+        <video src={require('../assets/capa-3.mp4')} autoPlay loop muted />
+      </Title>
       <HomeContainer>
-        <Title>
-        <video src={require('../assets/capa-4.mp4')} autoPlay loop muted />
-          <ImgPerfil>
-            <Image src={myPhoto} layout="responsive" alt="israel"/>
-          </ImgPerfil>
-        </Title>
+
         <Resumo>
-          <h1>ISRAEL MENDES DA SILVA</h1>
-          <p>O idealizador Israel, formado em bacharel e licenciatura de educação física no Centro Universitário São José; está cursando o ensino superior de ciência da computação na Descomplica e formado nos cursos de excel básico; organização e produtividade; técnicas e ferramentas para gestão de projetos e produtos; introdução ao desenvolvimento web; desenvolvimento web HTML5 + CSS3; micro empreendedor individual; e, sargento do exécito brasileiro da brigada de infataria paraquedista, é casado com a Sr Rafaela de Sá.</p>
+          <TitleTxt>
+            <h1>UM POUCO SOBRE MIM</h1>
+          </TitleTxt>
+          <ContainerGray>
+            <ImgPerfil>
+              <Image src={myPhoto} layout="responsive" alt="israel"/>
+            </ImgPerfil>
+            <TxtResumo>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur unde velit eius eveniet dolorum perspiciatis error rerum quia officiis corporis sed quaerat, provident totam eos dolores, minima quo similique?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi delectus praesentium explicabo laudantium nihil ad id vel dolores, accusamus aspernatur qui cupiditate tenetur libero, quia repellat sit quae, tempore laborum?</p>
+            </TxtResumo>
+          </ContainerGray>
         </Resumo>
+        
       </HomeContainer>
     </>
   )
