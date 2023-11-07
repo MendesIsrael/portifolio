@@ -5,24 +5,42 @@ export const Portifolios = styled ('div', {
   alignItems            : 'center',
   justifyContent        : 'center',
   gap                   : '2rem',
-  backgroundColor       : "Aqua",
 });
 
 export const ThreeSites = styled ('div', {
   display               : 'flex',
-  gap                   : '4rem',
-  backgroundColor       : "red",
+  gap                   : '2rem',
+
+  '&:hover': {
+    gap                 : '.5rem',
+    transition          : '.8s',
+
+  }
 
 });
 
 export const Sites = styled ('div', {
-  height                : '20rem',
-  width                 : '20rem',
-  backgroundColor       : "BlueViolet",
+  width                 : '25rem',
 
   '&:hover': {
-    height              : '25rem',
-    width               : '25rem',
-  }
+    width               : '33rem',
+    transition          : '.8s',
 
+    'NavBarSite': {
+      transition          : '1s',
+      color               : 'Blue',
+      backgroundColor     : 'Aqua',
+    },
+  },
+
+
+
+});
+
+export const NavBarSite = styled ('div', {
+  height                : '2rem',
+  borderRadius          : '0 0 8px 8px',
+  
+
+  
 });

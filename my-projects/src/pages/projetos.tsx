@@ -1,5 +1,11 @@
 import { ContainerGlobal, HabilidadesTitle } from "@/styles/pages/habilidades";
-import { Portifolios, Sites, ThreeSites } from "@/styles/pages/projetos";
+import { NavBarSite, Portifolios, Sites, ThreeSites } from "@/styles/pages/projetos";
+
+import Image from "next/image";
+import site1 from '../assets/projetos/instituto.jpg'
+import site2 from '../assets/projetos/casamento.jpg'
+import site3 from '../assets/projetos/ignite.jpg'
+import site4 from '../assets/projetos/arc.jpg'
 
 export default function Projetos() {
   return (
@@ -11,18 +17,27 @@ export default function Projetos() {
       <Portifolios>
         <ThreeSites>
           <Sites>
+            <Image src={site1} layout="responsive" alt="israel"/>
+            <NavBarSite>
+              <h5>06 de outubro de 1996</h5>
+            </NavBarSite>
           </Sites>
           <Sites>
+            <Image src={site2} layout="responsive" alt="israel"/>
           </Sites>
           <Sites>
+            <Image src={site3} layout="responsive" alt="israel"/>
           </Sites>
         </ThreeSites>
         <ThreeSites>
           <Sites>
+            <Image src={site4} layout="responsive" alt="israel"/>
           </Sites>
           <Sites>
+            <Image src={site1} layout="responsive" alt="israel"/>
           </Sites>
           <Sites>
+            <Image src={site1} layout="responsive" alt="israel"/>
           </Sites>
         </ThreeSites>
       </Portifolios>
