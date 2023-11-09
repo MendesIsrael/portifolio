@@ -8,6 +8,8 @@ export const Menu = styled('div', {
   alignItems          : 'center',
   justifyContent      : 'center',
   margin              : '.25rem',
+
+  zIndex:'100'
   
 });
 
@@ -17,17 +19,40 @@ export const NavPages = styled('div', {
   listStyle           : 'none',
   gap                 : '1rem',
 
+
   a: {
+    position          : 'relative',
     textDecoration    : 'none',
     textTransform     : 'uppercase',
     padding           : '0.3rem',
-    color             : 'gray',    
-    borderRadius      : '5px',
+    color             : '$green200',    
+    overflow          : 'hidden',
+    fontWeight        : '550',
+    
+  
+
+  '&::before': {
+    content           : '',
+    position          : 'absolute',
+    width             : '0',
+    height            : '100%',
+    zIndex            : '-1',
+    top               : '0',
+    left              : '0',
+    transition        : 'all .7s',
+    background        : '$white',
+  },
+
+  '&:hover::before': {
+    width             : '100%',
+  },
+    
 
     '&:hover': { 
-      color           : '$white',
-      fontWeight      : '600',
-      boxShadow       : '1px 1px 6px white',
+      color           : '$black',
+      boxShadow       : '1px 1px 4px white',
+      transition      : '.4s',
     }
-  }
+  },
+
 });
