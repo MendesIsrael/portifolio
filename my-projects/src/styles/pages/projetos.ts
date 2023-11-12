@@ -27,14 +27,26 @@ export const Sites = styled ('div', {
     transition          : '.8s',
   },
 
+  a: {
+    color               : 'black',
+    backgroundColor     : 'black',
+    '&:hover': {
+      transition          : '1s',
+      color               : 'Blue',
+      backgroundColor     : 'Aqua',
+      
+    },
+  },
+
 });
 
 export const NavBarSite = styled ('div', {
   height                : '2rem',
   borderRadius          : '0 0 8px 8px',
   
-  transition          : '1s',
-  color               : 'Blue',
-  backgroundColor     : 'Aqua',
+
   
+  
+  
+
 });

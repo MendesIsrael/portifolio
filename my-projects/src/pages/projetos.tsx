@@ -7,6 +7,10 @@ import site2 from '../assets/projetos/casamento.jpg'
 import site3 from '../assets/projetos/ignite.jpg'
 import site4 from '../assets/projetos/arc.jpg'
 
+
+function porCima(obj: { style: { backgroundColor: string; }; }){
+  obj.style.backgroundColor = "#00FF00"}
+
 export default function Projetos() {
   return (
     <ContainerGlobal>
@@ -17,10 +21,12 @@ export default function Projetos() {
       <Portifolios>
         <ThreeSites>
           <Sites>
-            <Image src={site1} layout="responsive" alt="israel"/>
-            <NavBarSite>
-              <h5>06 de outubro de 1996</h5>
-            </NavBarSite>
+            <a href="#">
+              <Image src={site1} layout="responsive" alt="israel"/>
+              <NavBarSite onMouseOver={porCima}>
+                <h5>06 de outubro de 1996</h5>
+              </NavBarSite>
+            </a>
           </Sites>
           <Sites>
             <Image src={site2} layout="responsive" alt="israel"/>
